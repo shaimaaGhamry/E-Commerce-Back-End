@@ -113,7 +113,7 @@ router.delete('/:id', (req, res) => {
       where:{
         id : req.params.id
       }
-    });
+    }); 
     res.status(200).json(product);
   }catch(err){
     res.status(500).json(err);
